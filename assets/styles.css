@@ -1,0 +1,18 @@
+#nav-bar {
+      margin: 0;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      background: var(--ivory);
+      border-bottom: 1px var(--ivory);
+      box-shadow: 0 6px 24px var(--ivory);
+      gap: 10px;
+    }
+
+#nav-bar .bar-right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
