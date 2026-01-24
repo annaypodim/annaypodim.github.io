@@ -3,29 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{{ page.title | default: "Anna Ypodimatopou" }}</title>
+    <title>Print</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600&family=Hedvig+Letters+Serif:wght@400;500&family=Poppins:wght@400;500;600&family=Work+Sans:wght@500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
   <body>
     <header class="global-nav" aria-label="Primary">
       <div class="brand">
-        <a href="{{ '/' | relative_url }}">Anna Ypodimatopou</a>
+        <a href="/">Anna Ypodimatopou</a>
       </div>
       <nav class="nav-box">
-        <a class="nav-item" href="{{ '/' | relative_url }}">home</a>
-        <a class="nav-item" href="{{ '/journalism.html' | relative_url }}">journalism</a>
-        <a class="nav-item" href="{{ '/projects.html' | relative_url }}">projects</a>
-        <a class="nav-item" href="{{ '/experiences.html' | relative_url }}">experiences</a>
+        <a class="nav-item" href="/">home</a>
+        <a class="nav-item" href="/journalism.html">journalism</a>
+        <a class="nav-item" href="/projects.html">projects</a>
+        <a class="nav-item" href="/experiences.html">experiences</a>
       </nav>
     </header>
     <main>
-      {{ content }}
+      
     </main>
     <footer class="site-footer">
       <p>
