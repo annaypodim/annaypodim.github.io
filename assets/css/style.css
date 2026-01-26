@@ -197,6 +197,82 @@ main {
   width: min(95vw, 1400px);
 }
 
+.projects-latest {
+  margin: 2vh auto 0;
+  padding: 1.5rem 0 4rem;
+  width: min(95vw, 900px);
+}
+
+.projects-latest-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.projects-latest-header .label {
+  font-family: 'Baskerville', 'Libre Baskerville', serif;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  margin-bottom: 0.4rem;
+}
+
+.projects-latest-header h3 {
+  font-family: 'Baskerville', 'Libre Baskerville', serif;
+  font-weight: 400;
+  font-size: clamp(1.6rem, 3vw, 2rem);
+  margin: 0;
+}
+
+.latest-subtitle {
+  font-size: 0.95rem;
+  color: rgba(17, 17, 17, 0.75);
+  margin-top: 0.3rem;
+}
+
+.latest-posts {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.latest-item {
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.latest-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.latest-meta {
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(17, 17, 17, 0.55);
+  margin-bottom: 0.35rem;
+}
+
+.latest-item h4 {
+  font-size: 1.1rem;
+  margin: 0 0 0.35rem;
+}
+
+.latest-item h4 a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.latest-item h4 a:hover,
+.latest-item h4 a:focus {
+  text-decoration: underline;
+}
+
+.latest-item p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
 .coursework {
   margin: 5vh auto 0;
   padding: 3rem 0 4rem;
