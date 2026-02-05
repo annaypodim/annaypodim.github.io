@@ -7,25 +7,37 @@ title: Journalism
     <h2 id="journalism-title">journalism</h2>
     <p class="journalism-subtitle">explore my journalism portfolio!</p>
   </header>
-  <section class="journalism-links" aria-label="Explore journalism work">
-    <a class="link-tile" href="{{ '/awards.html' | relative_url }}">
-      <div class="tile-label">
-        <span class="tile-title">Awards</span>
-        <span class="tile-sub">View recognitions</span>
+  <section class="editor-showcase" aria-labelledby="editor-subtitle">
+    <div class="editor-gallery">
+      <div class="editor-image-box">
+        <img
+          src="{{ '/assets/images/awards/best-of-sno.jpg' | relative_url }}"
+          alt="Best of SNO recognition"
+          loading="lazy"
+        />
       </div>
-    </a>
-    <a class="link-tile" href="{{ '/print.html' | relative_url }}">
-      <div class="tile-label">
-        <span class="tile-title">Print</span>
-        <span class="tile-sub">Read selected features</span>
+      <div class="editor-image-box">
+        <img
+          src="{{ '/assets/images/awards/cpw-2025.jpg' | relative_url }}"
+          alt="California Press Women award"
+          loading="lazy"
+        />
       </div>
-    </a>
-    <a class="link-tile" href="{{ '/photojournalism.html' | relative_url }}">
-      <div class="tile-label">
-        <span class="tile-title">Photojournalism</span>
-        <span class="tile-sub">Explore visual essays</span>
+      <div class="editor-image-box">
+        <img
+          src="{{ '/assets/images/awards/nspa-multimedia.jpg' | relative_url }}"
+          alt="NSPA multimedia honor"
+          loading="lazy"
+        />
       </div>
-    </a>
+    </div>
+    <div class="editor-text">
+      <p id="editor-subtitle" class="editor-subtitle">currently: editing</p>
+      <p class="editor-description">
+        I edit features and long-form stories for Scot Scoop, tightening voice, clarity, and pacing so
+        each piece feels intentional from headline to last line.
+      </p>
+    </div>
   </section>
   <div class="journalism-gallery" aria-label="Featured articles">
     <article class="article-card">
@@ -131,5 +143,35 @@ The car is freezing, your backpack is comically heavy, and you tune into the pop
     </article>
 
   </div>
+
+  <header class="projects-latest-header journalism-featured-header">
+    <h3>award and recognition</h3>
+  </header>
+
+  <section class="editor-featured-row" aria-label="Editing awards highlights">
+    <div class="editor-gallery editor-gallery--featured">
+      <div class="editor-image-box editor-image-box--large">
+        <img
+          src="{{ '/assets/images/awards/best-of-sno.jpg' | relative_url }}"
+          alt="Best of SNO recognition"
+          loading="lazy"
+        />
+      </div>
+      <div class="editor-image-box editor-image-box--large">
+        <img
+          src="{{ '/assets/images/awards/cpw-2025.jpg' | relative_url }}"
+          alt="California Press Women award"
+          loading="lazy"
+        />
+      </div>
+      <div class="editor-image-box editor-image-box--large">
+        <img
+          src="{{ '/assets/images/awards/nspa-multimedia.jpg' | relative_url }}"
+          alt="NSPA multimedia honor"
+          loading="lazy"
+        />
+      </div>
+    </div>
+  </section>
 </section>
 <script src="{{ '/assets/js/gallery-scroll.js' | relative_url }}" defer></script>

@@ -122,6 +122,95 @@ main {
   background-color: rgba(0, 0, 0, 0.04);
 }
 
+.editor-showcase {
+  display: flex;
+  gap: clamp(1rem, 3vw, 2.25rem);
+  width: 100%;
+  align-items: stretch;
+  margin-top: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.editor-gallery {
+  flex: 1 1 50%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(0.75rem, 2vw, 1.25rem);
+}
+
+.editor-image-box {
+  aspect-ratio: 4 / 3;
+  border-radius: 2px;
+  overflow: hidden;
+  background-color: var(--muted);
+}
+
+.editor-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.editor-text {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  gap: 0.75rem;
+}
+
+.editor-subtitle {
+  font-family: 'Hedvig Letters Serif', 'Baskerville', serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.08em;
+  text-transform: none;
+  color: var(--ink-soft);
+  font-weight: 600;
+  margin: 0;
+}
+
+.editor-featured-row {
+  width: min(80vw, 1100px);
+  margin: clamp(2rem, 5vw, 3rem) auto 0;
+}
+
+.editor-gallery--featured {
+  width: 100%;
+  margin: 0 auto;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  padding: 0 clamp(1rem, 4vw, 3rem);
+}
+
+.editor-image-box--large {
+  min-height: clamp(120px, 18vw, 180px);
+}
+
+.editor-description {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text);
+  max-width: 42ch;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .editor-showcase {
+    flex-direction: column;
+  }
+
+  .editor-text {
+    max-width: 520px;
+  }
+}
+
+@media (max-width: 640px) {
+  .editor-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
 .hero {
   min-height: calc(100vh - 160px);
   display: flex;
@@ -710,6 +799,10 @@ main {
   -webkit-overflow-scrolling: touch;
 }
 
+.journalism-featured-header {
+  margin-top: clamp(2rem, 4vw, 3rem);
+}
+
 .journalism-links {
   margin-top: 2rem;
   padding: 0;
@@ -830,10 +923,6 @@ main {
 }
 
 @media (max-width: 768px) {
-  .nav {
-    padding: 0 0.5rem;
-  }
-
   .hero {
     flex-direction: column;
     align-items: flex-start;
