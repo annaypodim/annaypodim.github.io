@@ -4,7 +4,14 @@ title: Home
 ---
 <section class="hero" aria-labelledby="intro-title">
   <div class="hero-text">
-    <h1 id="intro-title">Hey, Anna here.</h1>
+    <h1
+      id="intro-title"
+      class="typewriter"
+      data-type-text="Hi, Anna here"
+    >
+      <span class="typewriter-text"></span>
+      <span aria-hidden="true" class="typewriter-cursor"></span>
+    </h1>
     <p class="hero-blurb">
       I love coding, and I'm always <a href="{{ '/projects.html' | relative_url }}">building something</a>. 
       I'm also a high school student and an <a href="{{ '/journalism.html' | relative_url }}">editor</a> for 
@@ -16,3 +23,4 @@ title: Home
     <img src="{{ '/assets/images/photo-placeholder.jpeg' | relative_url }}" alt="Portrait of Anna Ypodimatopou" />
   </div>
 </section>
+<script src="{{ '/assets/js/typewriter.js' | relative_url }}" defer></script>
