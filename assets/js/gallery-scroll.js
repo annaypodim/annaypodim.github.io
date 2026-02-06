@@ -19,6 +19,8 @@
       return gallery.scrollWidth - gallery.clientWidth > 1;
     }
 
+    var scrollBoost = 3;
+
     function onWheel(event) {
       if (!shouldCapture || !desktopQuery.matches || !isScrollable()) {
         return;
@@ -31,7 +33,7 @@
 
       var prev = gallery.scrollLeft;
       var maxScroll = gallery.scrollWidth - gallery.clientWidth;
-      var next = Math.max(0, Math.min(maxScroll, prev + delta));
+      var next = Math.max(0, Math.min(maxScroll, prev + delta * scrollBoost));
 
       if (next !== prev) {
         gallery.scrollLeft = next;
