@@ -23,11 +23,11 @@
     const content = document.createElement('div');
     content.className = 'carousel-slide__content';
 
+    let stack = null;
     if (project.languages) {
-      const stack = document.createElement('p');
+      stack = document.createElement('p');
       stack.className = 'carousel-slide__stack';
       stack.textContent = project.languages;
-      content.appendChild(stack);
     }
 
     const title = document.createElement('h3');
@@ -40,6 +40,10 @@
       description.className = 'carousel-slide__description';
       description.textContent = project.description;
       content.appendChild(description);
+    }
+
+    if (stack) {
+      content.appendChild(stack);
     }
 
     slide.appendChild(content);
