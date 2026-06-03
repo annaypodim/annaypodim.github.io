@@ -23,42 +23,37 @@ title: Projects
   </div>
 </section>
 
-  <!-- <div class="projects-grid">
-    <article class="project-block">
-      <h3>Dark Matter Visualized</h3>
-      <p>
-        Where does dark matter from galaxy come from? Mass in spiral galaxies visualized. 
-      </p>
-    </article>
-    <article class="project-block">
-      <h3>Handmade Telescope</h3>
-      <p>
-        Crafting a collapsible telescope with reclaimed glass, pairing analog optics with
-        field sketching.
-      </p>
-    </article>
-    <article class="project-block">
-      <h3>Treasure Hunt Game</h3>
-      <p>
-        A minimalist narrative adventure built for the terminal. Search for my friends things!
-      </p>
-    </article>
-  </div>
-</section> -->
-
 <script>
   window.projectCarouselData = [
     {
       title: 'AP Style Assistant',
       description:
-        'A RAG-powered assistant that gives up-to-date guidance on Assosicated Press style.',
-      languages: 'Python',
+        'A production retrieval-augmented generation (RAG) pipeline for AP Style querying with an inline real-time style editor. Supported by 100+ active users across 2 countries.',
+      languages: 'Python • FastAPI • FAISS • RAG',
       image: "{{ '/assets/images/projects/apstyle.jpg' | relative_url }}",
+      link: 'https://apstyleditor.com/',
+      linkText: 'Check it out',
+    },
+    {
+      title: 'Music Island',
+      description:
+        'A native macOS now-playing widget that mirrors the system audio with album art, a scrubbable timeline, and playback controls in a Dynamic Island-style menu bar app.',
+      languages: 'Swift • SwiftUI',
+      image: "{{ '/assets/images/projects/music-island.png' | relative_url }}",
+      link: 'https://github.com/annaypodim/music-island/tree/master',
+      frame: true,
+    },
+    {
+      title: 'Beat Schedule',
+      description:
+        'A Next.js app that turns natural language into a structured schedule using GPT. Made to simplify a newsroom\'s schedule with a straightfoward interface so they never miss a deadline.',
+      languages: 'Next.js • React • OpenAI API',
+      image: "{{ '/assets/images/projects/calendar.png' | relative_url }}",
     },
     {
       title: 'Where the lost things went',
       description:
-        'A text-based teasure hunt game where you search for my friends\'s lost things around campus. Created for my friends, inspired by Zork.',
+        'A text-based teasure hunt game where players search for a few teenager\'s lost things around campus. Created for my friends, inspired by Zork.',
       languages: 'Python',
       image: "{{ '/assets/images/projects/zork.jpg' | relative_url }}",
     },
@@ -89,9 +84,22 @@ title: Projects
   <div class="latest-posts">
 
     <article class="latest-item">
+      <p class="latest-meta">April 2026 · Medium</p>
+      <h4><a href="https://medium.com/@anna.ypodim/31-experiments-on-a-rag-pipeline-fe3b17d35a71" target="_blank" rel="noopener">31 experiments on a RAG pipeline</a></h4>
+      <p>Notes from iteratively tuning a retrieval-augmented generation pipeline across 31 experiments.</p>
+    </article>
+
+    <article class="latest-item">
+      <p class="latest-meta">March 2026 · Medium</p>
+      <h4><a href="https://medium.com/@anna.ypodim/lessons-from-building-game-rooms-28a376425270" target="_blank" rel="noopener">Lessons from building game rooms</a></h4>
+      <p>Takeaways from building real-time, synchronized game rooms.</p>
+    </article>
+
+    <article class="latest-item">
       <p class="latest-meta">Jan 2026 · Medium</p>
       <h4><a href="https://medium.com/@anna.ypodim/the-art-of-retrieval-augmented-generation-44cd141ca45c" target="_blank" rel="noopener">The art of retrieval-augmented generation</a></h4>
       <p>A reflection on a recent project, this blog is a comprehensive overview of retrieval-augmented generation.</p>
     </article>
+
   </div>
 </section>

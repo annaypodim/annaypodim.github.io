@@ -20,6 +20,10 @@
     const backgroundImage = project.image || fallbackImage;
     slide.style.setProperty('--slide-image', `url('${backgroundImage}')`);
 
+    if (project.frame) {
+      slide.classList.add('carousel-slide--framed');
+    }
+
     const content = document.createElement('div');
     content.className = 'carousel-slide__content';
 
@@ -44,6 +48,16 @@
 
     if (stack) {
       content.appendChild(stack);
+    }
+
+    if (project.link) {
+      const link = document.createElement('a');
+      link.className = 'carousel-slide__link';
+      link.href = project.link;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.textContent = project.linkText || 'view on GitHub';
+      content.appendChild(link);
     }
 
     slide.appendChild(content);
